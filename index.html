@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafael John Malubag | AI Automation Builder</title>
+<meta name="description" content="Portfolio of n8n and Make automations: CRM pipelines, AI lead triage, onboarding and error handling.">
+<!-- Search Console: paste your verification meta tag here and keep it permanently -->
+<!-- <meta name="google-site-verification" content="PASTE_TOKEN"> -->
+<!-- GA4: replace G-XXXXXXXXXX in both places -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f7;--ink:#14202b;--muted:#4a5a68;--line:#cfd8de;--card:#fff;--accent:#0f766e;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a22;--ink:#e7eef2;--muted:#9fb1bd;--line:#2a3b47;--card:#16252f;--accent:#5eead4}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 20px env(safe-area-inset-bottom,0px)}
+main{max-width:760px;margin:0 auto;padding:56px 0 40px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:1.5rem;margin:56px 0 16px}
+h3{font-size:1.1rem;margin-bottom:4px}
+p{margin:0 0 12px;max-width:62ch}
+.lead{font-size:1.2rem;color:var(--muted);margin-top:16px}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);margin:24px 0}
+.builds{display:grid;gap:14px}
+.build{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.build p{margin:0;color:var(--muted);font-size:.98rem}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+ul.links{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>I turn manual busywork into automations that report their own failures.</h1>
+<p class="lead">Hi, I’m Rafael John Malubag, an automation builder in the Philippines working with n8n, Make, and the Groq API. Available for full-time remote work.</p>
+<p class="note">Everything below is portfolio work built for simulated clients. Where a trigger is simulated, I say so.</p>
+
+<h2>What I’ve built</h2>
+<div class="builds">
+<div class="build"><h3>Naga Homes Assistant</h3><p>Chat agent on Telegram with memory. Captures a lead, labels it Hot, Warm, or Cold, saves it to Airtable, and alerts agents on Hot leads. Self-hosted n8n.</p></div>
+<div class="build"><h3>Pipedrive Lead Intake</h3><p>A form creates the organization, person, deal, and a follow-up call activity, tracks lead source from the link, and sends a Telegram alert. Live-tested.</p></div>
+<div class="build"><h3>Won Deal to ClickUp Onboarding</h3><p>When a deal is marked won, it creates a ClickUp folder, an onboarding list, and five tasks with owners and due dates. Ran on a real deal in my own trial account.</p></div>
+<div class="build"><h3>Voice-Note Listing Bot</h3><p>Send a voice note on Telegram and get a listing description, Instagram caption, and hashtags back. Whisper transcription plus an LLM.</p></div>
+<div class="build"><h3>AI Inquiry Triage (Make)</h3><p>Reads inbound real estate emails, extracts intent, budget, and timeline as strict JSON, scores urgency, drafts a reply, and alerts Slack on urgent leads.</p></div>
+<div class="build"><h3>Abandoned Cart Recovery (Make)</h3><p>Two-email AI sequence with a purchase check and a discount path. Runs on a simulated cart trigger.</p></div>
+<div class="build"><h3>Central error handling (n8n)</h3><p>One error workflow sends a Telegram alert and logs every failure to a sheet. API nodes retry three times, three seconds apart.</p></div>
+</div>
+
+<h2>Links</h2>
+<ul class="links">
+<li><a href="https://drive.google.com/drive/folders/1n9clnJjOrgrulIw-aEedwhg27_hazmpA?usp=sharing">Case study PDF</a></li>
+<li><a href="https://github.com/rafael-automates/n8n-make-automation-portfolio">Workflow files and write-ups on GitHub</a></li>
+<li><a href="https://www.instagram.com/rafael.automate/">Demo reels on Instagram</a></li>
+<li><a href="https://calendly.com/rafaelmalubag1/15-min-discovery-call">Book a quick call</a></li>
+</ul>
+
+<footer>This site uses Google Analytics to count visits. <a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
