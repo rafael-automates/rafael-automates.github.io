@@ -29,7 +29,7 @@ p{margin:0 0 12px;max-width:62ch}
 .note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);margin:24px 0}
 .builds{display:grid;gap:14px}
 @media (min-width:720px){.builds{grid-template-columns:1fr 1fr}}
-.build:last-child{grid-column:1/-1}
+.build:last-child:nth-child(odd){grid-column:1/-1}
 .build{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 20px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
 .build:hover{border-color:var(--accent);transform:translateY(-2px)}
 .build:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
@@ -53,6 +53,12 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 
 <h2>What I’ve built</h2>
 <div class="builds">
+<a class="build" href="https://github.com/rafael-automates/n8n-make-automation-portfolio/tree/main/n8n/invoice-extractor">
+<div class="tags"><span class="tag">n8n</span><span class="tag">Gemini</span><span class="tag">Google Sheets</span><span class="tag">Telegram</span></div>
+<h3>Invoice Extractor</h3>
+<p>Reads supplier invoices from PDFs and photos, returns structured data for every line item, and flags totals that don't add up. Tested on fake invoices only.</p>
+<span class="more">View write-up</span></a>
+
 <a class="build" href="https://github.com/rafael-automates/n8n-make-automation-portfolio/tree/main/n8n/naga-homes-assistant">
 <div class="tags"><span class="tag">n8n</span><span class="tag">Groq</span><span class="tag">Airtable</span><span class="tag">Telegram</span></div>
 <h3>Naga Homes Assistant</h3>
@@ -81,6 +87,12 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:v
 <div class="tags"><span class="tag">Make</span><span class="tag">Groq</span><span class="tag">Gmail</span><span class="tag">Slack</span></div>
 <h3>AI Inquiry Triage</h3>
 <p>Reads inbound real estate emails, extracts intent, budget, and timeline as strict JSON, scores urgency, drafts a reply for human review, and alerts Slack on urgent leads. Failures are logged and the run continues.</p>
+<span class="more">View write-up</span></a>
+
+<a class="build" href="https://github.com/rafael-automates/n8n-make-automation-portfolio/tree/main/make/client-onboarding">
+<div class="tags"><span class="tag">Make</span><span class="tag">Groq</span><span class="tag">Google Workspace</span></div>
+<h3>Client Onboarding Automation</h3>
+<p>One form creates a private client folder, an AI-written welcome document, an email, and a kickoff event with a Meet link. The date is calculated, not hardcoded.</p>
 <span class="more">View write-up</span></a>
 
 <a class="build" href="https://github.com/rafael-automates/n8n-make-automation-portfolio/tree/main/make/shopify-cart-recovery">
